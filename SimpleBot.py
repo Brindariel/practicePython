@@ -1,7 +1,7 @@
 import cv2
 
 # Load image
-image_path = r"D:\live coding\Python file\Face.png"
+image_path = r"D:\NameFile\Python file\Image.png"
 image = cv2.imread(image_path)
 
 if image is None:
@@ -21,6 +21,6 @@ for (x, y, w, h) in faces:
     cv2.rectangle(image, (x, y), (x+w, y+h), (255, 0, 0), 2)
 
 # Save output image instead of showing it
-output_path = r"D:\live coding\Python file\output.png"
+output_path = r"D:\NameFile\Python file\output.png"
 cv2.imwrite(output_path, image)
 print(f"Output saved as {output_path}")
